@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김은채의 웹 포트폴리오</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root">
+        <nav>
+            <a href="#intro">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#project">PROJECT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <div id="intro">
+            <div class="text">
+                Hello, I'm <span class="highlight">KIMEUNCHAE</span><br class="text-br">
+                I'm a full-stack web developer
+            </div>
+        </div>
+        <div id="about">
+            <span class="title">About</span>
+            <div class="about_inner_wrapper">
+                <div class="profile">
+                    <div class="avatar"></div>
+                    <span>1997.06.19 김은채</span>
+                </div>
+                <div class="about_text">
+                    Full-Stack 웹 개발자가 되기 위해 끊임없이 노력하고 있는 김은채입니다.
+                    주로 Django/HTML/CSS/Javascript를 이용하여 웹페이지를 구축하고,
+                    최근에는 DjangoRESTframework/React/Next.js를 통한 웹 개발을
+                    하기 위해 공부 중에 있습니다.
+                </div>
+            </div>
+        </div>
+        <div id="skill">
+            <div class="skill_wrapper">
+                <div class="skill_one_set">
+                    <div class="skill_img_wrapper">
+                        <img src="img/django.png" class="skill_img" src="" alt="">
+                    </div>
+                    <span class="skill_title">Django</span>
+                    <div class="skill_text">
+                        가장 익숙하게 사용하는 프레임워크로
+                        Django 핵심 기능을 이용하여
+                        백엔드 설계가 가능하며, 현재는
+                        DjangoRESTframework를 학습 중
+                    </div>
+                </div>
+                <div class="skill_one_set">
+                    <div class="skill_img_wrapper">
+                        <img src="img/htmlcss.png" class="skill_img" src="" alt="">
+                    </div>
+                    <span class="skill_title">HTML/CSS</span>
+                    <div class="skill_text">
+                        UI 디자인을 보고 HTML, CSS로 옮겨
+                        구현할 수 있고, 반응형 웹 페이지를
+                        제작 가능
+                    </div>
+                </div>
+                <div class="skill_one_set">
+                    <div class="skill_img_wrapper">
+                        <img style="height:56.59px" src="img/js.png" class="skill_img" src="" alt="">
+                    </div>
+                    <span class="skill_title">JavaScript/ES6</span>
+                    <div class="skill_text">
+                        DOM을 조작하여 웹페이지를
+                        동적으로 제작 가능하며, 서버 혹은
+                        외부 API와의 통신을 할 수 있고
+                        최신 ES6 문법을 적용할 수 있음
+                    </div>
+                </div>
+                <div class="skill_one_set">
+                    <div class="skill_img_wrapper">
+                        <img src="img/aws.png" class="skill_img" src="" alt="">
+                    </div>
+                    <span class="skill_title">AWS</span>
+                    <div class="skill_text">
+                        Django 프로젝트를 AWS EB를 통해 EC2에
+                        배포하고, AWS RDS(PostgreSQL)에 DB를
+                        분리하고, AWS S3에 Media/Static 파일을
+                        업로드해 프로젝트를 서비스한 경험이 있음
+                    </div>
+                </div>
+                <div class="skill_one_set">
+                    <div class="skill_img_wrapper">
+                        <img src="img/git.png" class="skill_img" src="" alt="">
+                    </div>
+                    <span class="skill_title">git</span>
+                    <div class="skill_text">
+                        협업 시 필요한 pull, merge, reset 등의
+                        명령어들과 Pull requests를 사용할 수 있고,
+                        develop 브랜치와 각각의 feature 브랜치로 분류 후
+                        merge 하는 방식으로 협업을 진행한 경험이 있음.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project">
+            <span class="title">Project</span>
+            <div class="project_wrapper">
+                <div class="project_one_set">
+                    <div class="project_set_img"></div>
+                    <div class="project_set_text"></div>
+                </div>
+                <div class="project_one_set">
+                    <div class="project_set_img"></div>
+                    <div class="project_set_text"></div>
+                </div>
+                <div class="project_one_set">
+                    <div class="project_set_img"></div>
+                    <div class="project_set_text"></div>
+                </div>
+                <div class="project_one_set">
+                    <div class="project_set_img"></div>
+                    <div class="project_set_text"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="contact">
+            <span class="title">Contact</span>
+            <div class="contact_wrapper">
+                <div class="contact_one_set">
+                    <div class="contact_img_wrapper">
+                        <img src="img/github.png" alt="github">
+                    </div>
+                    <a target="_blank" href="https://github.com/eunchae619">https://github.com/eunchae619</a>
+                </div>
+                <div class="contact_one_set">
+                    <div class="contact_img_wrapper">
+                        <img src="img/blog.png" alt="blog">
+                    </div>
+                    <a target="_blank" href="https://eunchae619.github.io">https://eunchae619.github.io</a>
+                </div>
+                <div class="contact_one_set">
+                    <div class="contact_img_wrapper">
+                        <img src="img/mail.png" alt="mail">
+                    </div>
+                    <a href="mailto:eunchae619@naver.com">eunchae619@naver.com</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            ⓒ 2020 김은채 all rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
