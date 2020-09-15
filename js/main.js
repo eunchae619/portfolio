@@ -1,14 +1,25 @@
 navWrapper = document.querySelector(".nav_wrapper");
 categories = navWrapper.querySelectorAll("a");
 
+// 스크롤시 add highlight 이벤트
+window.addEventListener("scroll", () => {
+  const wrappers = ["#intro", "#about", "#project", "#contact"];
+  for (const wrapper of wrappers) {
+    if (window.scrollY > document.querySelector(wrapper).offsetTop - 400) {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.classList.remove("jsMenuHighlight");
+      });
+      document
+        .querySelector(`a[href="${wrapper}"]`)
+        .classList.add("jsMenuHighlight");
+    }
+  }
+});
+
 // Smooth Scroll 부분
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.classList.remove("jsMenuHighlight");
-    });
-    anchor.classList.add("jsMenuHighlight");
     navWrapper.classList.remove("set_navWrapper_spread");
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
