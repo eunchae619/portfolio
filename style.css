@@ -45,7 +45,7 @@ nav .fas:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("img/intro_bg.png") center no-repeat;
+  background: url("img/intro_bg.png") bottom 20px center no-repeat;
 }
 
 .text {
