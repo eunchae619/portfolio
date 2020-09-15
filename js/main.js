@@ -5,7 +5,7 @@ categories = navWrapper.querySelectorAll("a");
 window.addEventListener("scroll", () => {
   const wrappers = ["#intro", "#about", "#project", "#contact"];
   for (const wrapper of wrappers) {
-    if (window.scrollY > document.querySelector(wrapper).offsetTop - 400) {
+    if (window.scrollY > document.querySelector(wrapper).offsetTop - 900) {
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.classList.remove("jsMenuHighlight");
       });
@@ -13,6 +13,12 @@ window.addEventListener("scroll", () => {
         .querySelector(`a[href="${wrapper}"]`)
         .classList.add("jsMenuHighlight");
     }
+  }
+  if (window.scrollY <= 50) {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.classList.remove("jsMenuHighlight");
+    });
+    document.querySelector(`a[href="#intro"]`).classList.add("jsMenuHighlight");
   }
 });
 
