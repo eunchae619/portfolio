@@ -1,6 +1,11 @@
 navWrapper = document.querySelector(".nav_wrapper");
 categories = navWrapper.querySelectorAll("a");
 
+// intro 높이설정
+document
+  .querySelector("#intro")
+  .setAttribute("style", `height: ${window.innerHeight + 200}px`);
+
 // 스크롤시 add highlight 이벤트
 window.addEventListener("scroll", () => {
   const wrappers = ["#intro", "#about", "#project", "#contact"];
