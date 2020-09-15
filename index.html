@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="root">
         <nav>
-            <a href="#intro">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#project">PROJECT</a>
-            <a href="#contact">CONTACT</a>
+            <i onclick="clickMenu()" class=" fas fa-bars"></i>
+            <div class="nav_wrapper">
+                <a class=" jsMenuHighlight" href="#intro">HOME</a>
+                <a class="" href="#about">ABOUT</a>
+                <a class="" href="#project">PROJECT</a>
+                <a class="" href="#contact">CONTACT</a>
+            </div>
         </nav>
         <div id="intro">
             <div class="text">
@@ -152,6 +156,7 @@
             ⓒ 2020 김은채 all rights reserved.
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

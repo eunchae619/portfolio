@@ -7,24 +7,37 @@ body {
 }
 
 nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   z-index: 1000;
   font-family: "Montserrat", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #9a9eaa33;
+}
+
+.nav_wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  padding: 2.4rem 3.5rem;
+  padding: 2rem 0;
 }
 
 nav a {
   margin-right: 3rem;
 }
 
-nav a:nth-child(1) {
-  color: #ff6a6a;
+nav .fas {
+  display: none;
+  font-size: 2rem;
+}
+
+nav .fas:hover {
+  cursor: pointer;
 }
 
 #intro {
@@ -240,6 +253,46 @@ footer {
   color: #e2e2e2;
 }
 
+@media (max-width: 900px) {
+  nav {
+    background-color: #b7bbc6;
+    padding: 1rem;
+  }
+
+  nav .fas {
+    display: block;
+    color: white;
+  }
+
+  .nav_wrapper {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    background-color: #9a9eaa;
+    padding: 0;
+
+    transition: height 0.3s ease-out;
+  }
+
+  .nav_wrapper > a {
+    margin-right: 0;
+    display: block;
+    margin-left: 1.3rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .nav_wrapper > a:first-child {
+    margin-top: 2rem;
+  }
+
+  .nav_wrapper > a:last-child {
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 800px) {
   .text {
     font-size: 2.2rem;
@@ -302,4 +355,21 @@ footer {
   .project_one_set {
     width: 250px;
   }
+}
+
+/* js 관련 */
+.set_none {
+  display: none !important;
+}
+
+.set_block {
+  display: block !important;
+}
+
+.set_navWrapper_spread {
+  height: 190px;
+}
+
+.jsMenuHighlight {
+  color: #ff6a6a;
 }
