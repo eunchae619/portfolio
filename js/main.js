@@ -23,7 +23,6 @@ for (const project of projects) {
   });
 
   project.querySelector(".jsCloseBox").addEventListener("click", () => {
-    console.log("zz");
     project
       .querySelector(".project_hidden_detail")
       .classList.add("set_opacity_0");
