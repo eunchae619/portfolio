@@ -10,4 +10,4 @@
 
 ## 주요 기능
 * 반응형 웹
-* Vanila JavaScripts
+* Vanila JavaScript
