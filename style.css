@@ -199,6 +199,22 @@ nav .fas:hover {
   color: #f1f1f1;
 }
 
+.project_one_set:nth-child(1) > .project_set_img{
+  background: url("img/broad.png") center no-repeat;
+}
+
+.project_one_set:nth-child(2) > .project_set_img{
+  background: url("img/fgnu.png") center no-repeat;
+}
+
+.project_one_set:nth-child(3) > .project_set_img{
+  background: url("img/anichar.png") center no-repeat;
+}
+
+.project_one_set:nth-child(4) > .project_set_img{
+  background: url("img/portfolio.png") center no-repeat;
+}
+
 .project_set_text {
   border-radius: 0 0 8px 8px;
   background-color: #fff;
