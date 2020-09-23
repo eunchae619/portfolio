@@ -65,7 +65,7 @@ nav .fas:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 6rem 0;
+  padding: 6rem 1rem;
 }
 
 .title {
@@ -88,9 +88,9 @@ nav .fas:hover {
 }
 
 .avatar {
-  background-color: #f9f9f9;
-  width: 250px;
-  height: 250px;
+  background: url('img/avatar.jpg') 100%/100% no-repeat #f9f9f9;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
