@@ -367,7 +367,7 @@ footer {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .contact_one_set a {
     font-size: 0.9rem;
   }
@@ -406,9 +406,23 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+  .avatar{
+    width: 150px;
+    height: 150px;
+  }
+  .contact_wrapper{
+    padding: 2rem 1rem;
+  }
+
+  .contact_one_set img{
+    margin-right: 0.1rem;
+  }
+}
+
+@media (max-width: 380px) {
   .contact_one_set a {
-    font-size: 0.7rem;
+    font-size: 0.82rem;
   }
   .contact_wrapper {
     padding-left: 0;
