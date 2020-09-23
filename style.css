@@ -95,6 +95,10 @@ nav .fas:hover {
   margin-bottom: 1rem;
 }
 
+.profile > span {
+  color: #757575;
+}
+
 .about_text {
   max-width: 519px;
   line-height: 1.8;

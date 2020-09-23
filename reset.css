@@ -37,7 +37,6 @@ cite,
 code,
 del,
 dfn,
-em,
 img,
 ins,
 kbd,
@@ -99,7 +98,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-strong{
+strong,em{
   margin: 0;
   padding: 0;
   border: 0;
